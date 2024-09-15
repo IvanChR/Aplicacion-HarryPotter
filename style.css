@@ -1,0 +1,130 @@
+:root {
+  --primary-red: #641e1e;
+  --primary-gold: #c39a1c;
+  --primary-brown: #3d2f22;
+  ---grey: #717679;
+  --white: #efeee9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background: #111;
+}
+header {
+  background: #222;
+  .header {
+    text-align: center;
+    color: var(--white);
+    h1 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      color: var(--primary-gold);
+      margin-bottom: 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: var(--primary-gold);
+      text-decoration: none;
+    }
+  }
+  .categorias {
+    margin-top: 2rem;
+  }
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.content {
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+button {
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  &:hover {
+    cursor: pointer;
+    background: var(--primary-gold);
+  }
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.item {
+  .info-container {
+    border-radius: 0 0 8px 8px;
+    background: #333;
+    padding: 1rem;
+  }
+}
+
+/*----- ----- ALL OF BACKGROUND COLORS ----- -----*/
+
+.grif .color-1 {
+  background-color: #740001;
+}
+.grif .color-2 {
+  background-color: #ae0001;
+}
+.grif .color-3 {
+  background-color: #eeba30;
+}
+.grif .color-4 {
+  background-color: #d3a625;
+}
+.slit .color-1 {
+  background-color: #1a472a;
+}
+.slit .color-2 {
+  background-color: #2a623d;
+}
+.slit .color-3 {
+  background-color: #5d5d5d;
+}
+.slit .color-4 {
+  background-color: #aaaaaa;
+}
+.rave .color-1 {
+  background-color: #0e1a40;
+}
+.rave .color-2 {
+  background-color: #222f5b;
+}
+.rave .color-3 {
+  background-color: #bebebe;
+}
+.rave .color-4 {
+  background-color: #946b2d;
+}
+.huff .color-1 {
+  background-color: #ecb939;
+}
+.huff .color-2 {
+  background-color: #f0c75e;
+}
+.huff .color-3 {
+  background-color: #726255;
+}
+.huff .color-4 {
+  background-color: #372e29;
+}
